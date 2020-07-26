@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+</head>
+<body>
+<style>
+body{
+    text-align: center;
+    background-image: url(todopic.jpg );
+    background-repeat: no-repeat;
+    background-color: lightblue;
+     background-size: 100%;
+}
+#todoItem{
+    width: 100px;
+    height:30px ;
+    
+}
+.applyall{
+    background-color:black;
+    color: white;
+    width: 30px;
+}
+.applyall1{
+    background-color: red;
+    color:black;
+    width: 30px;
+}
+.delBtn{
+background-color: lightseagreen;
+margin-left: 10px;
+}
+.editBtn{
+    background-color: lightskyblue;
+    margin-left: 10px;
+
+}
+ol{
+    text-align: center;
+    background-color: yellow;
+    width: 250px;
+    margin-left: 380px;
+}
+</style>
+  <h1>Todo app</h1> <br> <br>
+  <h4>My Todo list</h4> <br> <br>
+
+    <input id="todoItem" type="text" placeholder="Todo"  >
+    <button onclick="addTodo()" class="applyall" >+</button>
+    <button onclick="deletAll()" class="applyall1" >x</button>
+    <div>
+        <ol id="list">
+           
+
+        </ol>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
